@@ -1,3 +1,5 @@
+import os
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -371,7 +373,8 @@ PALETTE = {
 # ── LOAD & CACHE DATA ────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv('dashboard/main_data.csv')
+    import os
+    df = pd.read_csv(os.path.join(os.path.dirname(__file__), 'main_data.csv'))
     df['order_purchase_timestamp'] = pd.to_datetime(df['order_purchase_timestamp'])
     df['year_month'] = df['order_purchase_timestamp'].dt.to_period('M')
     return df
