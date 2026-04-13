@@ -259,9 +259,16 @@ with st.sidebar:
 
     st.markdown("<div class='divider'></div>", unsafe_allow_html=True)
     st.markdown("""
-    <div style='font-size:0.68rem;color:#2e3550;line-height:1.8;'>
+    <div style='font-size:0.68rem;color:#3d4870;line-height:1.8;margin-bottom:16px'>
         Source: Brazilian E-Commerce<br>Public Dataset · Olist<br>
-        <span style='color:#3d4870'>Sep 2016 – Agt 2018</span>
+        <span style='color:#4a5a80'>Sep 2016 – Agt 2018</span>
+    </div>
+    <div class='divider'></div>
+    <div style='padding:12px 0 4px'>
+        <div style='font-size:0.62rem;font-weight:600;color:#3d4870;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:10px'>👤 Author</div>
+        <div style='font-size:0.82rem;font-weight:600;color:#6878a0;margin-bottom:4px'>Fathan Nabil Rahman</div>
+        <div style='font-size:0.72rem;color:#3d4870;margin-bottom:2px'>nblrhmn5@students.unnes.ac.id</div>
+        <div style='font-size:0.72rem;color:#3d4870'>Dicoding: <span style='color:#4a5a90'>nabeelrr</span></div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -287,6 +294,14 @@ st.markdown("""
             <span class='dash-pill'><span class='dot' style='background:#5b8cff'></span> 2016–2018</span>
             <span class='dash-pill'><span class='dot' style='background:#00e5c8'></span> Brazil</span>
             <span class='dash-pill'><span class='dot' style='background:#4ade80'></span> Olist Dataset</span>
+            <span class='dash-pill'><span class='dot' style='background:#a78bfa'></span> Dicoding Final Project</span>
+        </div>
+        <div style='margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.05);display:flex;align-items:center;gap:14px'>
+            <div style='width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#5b8cff,#a78bfa);display:flex;align-items:center;justify-content:center;font-size:0.9rem;flex-shrink:0'>🧑</div>
+            <div>
+                <div style='font-size:0.78rem;font-weight:600;color:#c8d0e8'>Fathan Nabil Rahman</div>
+                <div style='font-size:0.7rem;color:#4a5270'>Belajar Analisis Data dengan Python · Dicoding Academy</div>
+            </div>
         </div>
     </div>
 </div>
@@ -437,6 +452,17 @@ with tab1:
                 <div class='stat-mini-lbl'>{lbl}</div>
             </div>""", unsafe_allow_html=True)
 
+        st.markdown("""
+        <div style='margin-top:20px;padding:18px 22px;background:#111528;border:1px solid rgba(91,140,255,0.15);border-radius:12px;border-left:3px solid #5b8cff'>
+            <div style='font-size:0.7rem;font-weight:600;color:#5b8cff;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px'>💡 Kesimpulan</div>
+            <div style='font-size:0.85rem;color:#8892b0;line-height:1.7'>
+                Tren order & revenue menunjukkan <strong style='color:#c8d0e8'>pertumbuhan konsisten</strong> sepanjang 2017–2018.
+                <strong style='color:#5b8cff'>Puncak tertinggi pada November 2017</strong> dengan 7.289 order — bertepatan dengan event <em>Black Friday</em>.
+                Kampanye promosi musiman terbukti berdampak sangat signifikan terhadap volume penjualan.
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
 # ════════════════════════════════════════════════════════════════════
 # TAB 2 — KATEGORI (Pertanyaan 2)
 # ════════════════════════════════════════════════════════════════════
@@ -503,6 +529,18 @@ with tab2:
             <div class='stat-mini-val' style='font-size:1rem'>{row['category'].replace('_',' ').title()}</div>
             <div class='stat-mini-lbl'>R${row['total_revenue']/1e3:.0f}K revenue</div>
         </div>""", unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style='margin-top:20px;padding:18px 22px;background:#111528;border:1px solid rgba(255,107,138,0.15);border-radius:12px;border-left:3px solid #ff6b8a'>
+        <div style='font-size:0.7rem;font-weight:600;color:#ff6b8a;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px'>💡 Kesimpulan</div>
+        <div style='font-size:0.85rem;color:#8892b0;line-height:1.7'>
+            Kategori <strong style='color:#c8d0e8'>health_beauty</strong> mendominasi revenue dengan selisih jauh dibanding kategori lain.
+            Beberapa kategori bottom memiliki <strong style='color:#ff6b8a'>avg order value tinggi namun volume rendah</strong> —
+            ini peluang besar jika dipasarkan lebih agresif. Fokus pada health_beauty, watches_gifts, dan bed_bath_table
+            untuk memaksimalkan revenue keseluruhan.
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # ════════════════════════════════════════════════════════════════════
 # TAB 3 — RFM (Pertanyaan 3)
@@ -609,6 +647,17 @@ with tab3:
             <span style='color:{TEXT};font-size:0.8rem'>{strat}</span>
         </div>
         """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style='margin-top:20px;padding:18px 22px;background:#111528;border:1px solid rgba(0,229,200,0.15);border-radius:12px;border-left:3px solid #00e5c8'>
+        <div style='font-size:0.7rem;font-weight:600;color:#00e5c8;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px'>💡 Kesimpulan</div>
+        <div style='font-size:0.85rem;color:#8892b0;line-height:1.7'>
+            Segmen <strong style='color:#5b8cff'>Champions (7%)</strong> adalah aset terpenting — program loyalty eksklusif wajib diprioritaskan.
+            Segmen <strong style='color:#ff6b8a'>At Risk (23.8%)</strong> merupakan prioritas re-engagement terdekat dengan kampanye personal.
+            Segmen <strong style='color:#4ade80'>Potential Loyalists (19.9%)</strong> berpotensi naik tier dengan insentif pembelian kedua.
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # ════════════════════════════════════════════════════════════════════
 # TAB 4 — GEOSPATIAL (Pertanyaan 4)
@@ -734,3 +783,16 @@ with tab4:
             <span>{cat_html}</span>
         </div>
         """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style='margin-top:20px;padding:18px 22px;background:#111528;border:1px solid rgba(255,204,77,0.15);border-radius:12px;border-left:3px solid #ffcc4d'>
+        <div style='font-size:0.7rem;font-weight:600;color:#ffcc4d;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px'>💡 Kesimpulan</div>
+        <div style='font-size:0.85rem;color:#8892b0;line-height:1.7'>
+            State <strong style='color:#ff6b8a'>RR, AP, AM, AC, PA</strong> memiliki rata-rata delivery 20–30+ hari —
+            jauh di atas rata-rata nasional <strong style='color:#c8d0e8'>17.7 hari</strong>.
+            Ketimpangan ini disebabkan minimnya seller di wilayah Utara Brasil.
+            <strong style='color:#ffcc4d'>Rekomendasi:</strong> insentif onboarding seller di 5 state terlambat dapat memangkas delivery time
+            secara signifikan dan meningkatkan kepuasan pelanggan regional.
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
