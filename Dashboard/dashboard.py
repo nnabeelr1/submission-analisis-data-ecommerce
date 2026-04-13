@@ -300,7 +300,7 @@ st.markdown("""
             <div style='width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#5b8cff,#a78bfa);display:flex;align-items:center;justify-content:center;font-size:0.9rem;flex-shrink:0'>🧑</div>
             <div>
                 <div style='font-size:0.78rem;font-weight:600;color:#c8d0e8'>Fathan Nabil Rahman</div>
-                <div style='font-size:0.7rem;color:#4a5270'>Belajar Analisis Data dengan Python · Dicoding Academy</div>
+                <div style='font-size:0.7rem;color:#4a5270'>Belajar Fundamental Analisis Data · Dicoding Academy</div>
             </div>
         </div>
     </div>
